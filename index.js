@@ -1,7 +1,8 @@
 /*
   Complete a seguinte função para que a mesma devolva todos os possíveis números de 4 dígitos, 
   onde cada um seja menor ou igual a<maxDigit>, e a soma dos dígitos de cada número gerado seja 21
-  Exemplo maxDigit=6: [3666, 4566]
+  e que nenhum numero posterior seja menor que os anteriores.
+  Exemplo maxDigit=6: [3666, 4566, 5556]
 
   exemplo maxDigit=7: [3567, ...]
 */
