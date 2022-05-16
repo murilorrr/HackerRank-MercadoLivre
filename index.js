@@ -79,13 +79,9 @@ const filterUseCase = (arrayNumbers) => {
   });
 }
 
-
-
-function main() {
-  const maxDigit = 7;
+(function() {
+  const maxDigit = 6;
   const numbersEquals21 = calculate(maxDigit);
   const result = filterUseCase(numbersEquals21);
   console.log(result);
-}
-
-main();
+})();
