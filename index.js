@@ -19,6 +19,12 @@ const sumNumbers = (number) => {
   return result;
 }
 
+/**
+ * verify if all numbers are equal or minus a value
+ * @param  {[number]} number [description]
+ * @param  {[number]} value [description]
+ * @return {[boolean]} validation [description]
+ */
 const isValidNumber = (number, value) => {
   const stringN = number.toString();
   const arrayNumbers = stringN.split("");
@@ -26,6 +32,11 @@ const isValidNumber = (number, value) => {
   return validation
 }
 
+/**
+ * calculate possible numbers with sum is equal 21 starting a maxDigit
+ * @param  {[number]} maxDigit [description]
+ * @return {[Array<number>]} [description]
+ */
 function calculate(maxDigit) {
   let minimunNumber = 1299;
   const maxNumber = maxDigit.toString().repeat(4);
@@ -44,6 +55,11 @@ function calculate(maxDigit) {
   return results;
 }
 
+/**
+ * filter array of numbers for numbers whose predecessor are not bigger than posterior
+ * @param  {[Array<number>]} arrayNumbers [description]
+ * @return {[Array<number>]} [description]
+ */
 const filterUseCase = (arrayNumbers) => {
   return arrayNumbers.filter(number => {
     const numberParam = number.toString();
@@ -59,8 +75,8 @@ const filterUseCase = (arrayNumbers) => {
     if (validation) {
       return numberParam;
     }
+
   });
-  
 }
 
 
